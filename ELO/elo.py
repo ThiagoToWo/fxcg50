@@ -21,7 +21,6 @@ def play(a,b):
   pb=1-pa
   test=random()
   result=[None]*2
-
   if test<=pa:
     a[1]+=32*(1-pa)
     b[1]+=32*(0-pb)
@@ -32,7 +31,6 @@ def play(a,b):
     b[1]+=32*(1-pb)
     result[0]=[b[0],round(b[1])]
     result[1]=pb
-
   return result
 
 #Calcula o resultado
@@ -42,15 +40,11 @@ def play(a,b):
 #anterior.
 def bracket(res):
   n=len(res[0])
-
   if n%2!=0:return
-
   prob=res[1]
   wins=[]
-
   for i in range(0,n,2):
     result=play(res[0][i],res[0][i+1])
     prob *=result[1]
-    wins.append(result[0])
-
+    wins.append(result[0])   
   return [wins,prob]

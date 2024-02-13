@@ -4,16 +4,17 @@
 #contagem de passos
 from divisors import *
 
-n=108
+n=461
+
+td=traddiv(n)
+nd=succdiv(n)
 
 print("Metodo Tradicional")
-print("Passos",end=": ")
-td=traddiv(n)
-print("Divisores:",len(td))
-print(td)
+print("Passos:",td[1])
+print("#Divisores:",len(td[0]))
+print(td[0])
 
-print("Metodo Novo")
-print("Passos",end=": ")
-nd=newdiv(n)
-print("Divisores:",len(nd))
-print(nd)
+print("Divisao Sucessiva")
+print("Passos:",nd[1])
+print("#Divisores:",len(nd[0]))
+print(nd[0])

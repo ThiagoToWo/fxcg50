@@ -5,5 +5,9 @@ from divisors import *
 
 n=72
 
-div=traddiv(n)
+td=traddiv(n)
+div=td[0]
+stp=td[1]
+
+print(stp)
 print(div)

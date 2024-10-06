@@ -39,11 +39,11 @@ for i in range(n):
   d=[0,0,0,0,0]  
   f=[0,0,0,0,0,0,0]
   
-print("pair:","{:.0%}".format(p/n))
-print("2 pair:","{:.0%}".format(p2/n))
-print("three:","{:.0%}".format(th/n))
-print("full house:","{:.0%}".format(fh/n))
-print("straight:","{:.0%}".format(st/n))
-print("four:","{:.0%}".format(fr/n))
-print("five:","{:.0%}".format(fv/n))
-print("no value:","{:.0%}".format(no/n))
+print("pair:","{:%}".format(p/n))
+print("2 pair:","{:%}".format(p2/n))
+print("three:","{:%}".format(th/n))
+print("full house:","{:%}".format(fh/n))
+print("straight:","{:%}".format(st/n))
+print("four:","{:%}".format(fr/n))
+print("five:","{:%}".format(fv/n))
+print("no value:","{:%}".format(no/n))

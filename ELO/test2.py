@@ -23,7 +23,7 @@ winers=[
 ["Por",0],
 ["Sui",0]
 ]
-m=100
+m=1000
 for i in range(m):
   times16=[
   ["Hol",1970],
